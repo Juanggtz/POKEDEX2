@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root {
+    --fuente: 'Shadows Into Light', cursive;
+    /*Colores Pokemon*/
+    --normal: #c587a1;
+    --pelea: #dd4444c5;
+    --vuelo: #3449a8;
+    --veneno: #833297;
+    --tierra: brown;
+    --roca: rgb(129, 34, 34);
+    --bicho: rgb(45, 188, 35);
+    --fantasma: rgb(151, 148, 148);
+    --acero: #e3e4e5;
+    --fuego: red;
+    --agua: rgba(0, 255, 255, 0.722);
+    --hierva: green;
+    --electrico: #b1ae24;
+    --psiquico: #ae00ff;
+    --hielo: #005e75;
+    --dragon: #960000;
+    --oscuro: black;
+    --magico: #ff0080;
+}
+
+* {
+    font-family: var(--fuente);
+}
+
+body {
+    background-color: rgb(0, 174, 255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-weight: bolder;
+}
+
+.container-icon {
+    display: flex;
+    margin: 100px 0px 20px 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-pokebola {
+    height: 150px;
+}
+
+.logo-pokebola {
+    height: 130px;
+}
+
+.logo-pokebola:hover {
+    height: 155px;
+}
+
+.container-lookup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+
+.input {
+    font-size: 30px;
+    height: 45px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(21, 112, 217);
+    border-radius: 5px;
+}
+
+.button:hover {
+    height: 55px;
+    border-radius: 6px;
+}
+
+.button:hover .iconify {
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.iconify {
+    font-size: 40px;
+}
+
+.container-pokemon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 100px;
+    margin-top: 50px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.item-pokeImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.pokeImg {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.nombre {
+    font-size: 50px;
+}
+
+.item_pokemon1 {
+    width: 250px;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-radius: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px;
+    border-color: #005e75;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.container-evolution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/*--------------------Colores de Pokemon------------------*/
+
+.normal {
+    background-color: var(--normal);
+}
+
+.fighting {
+    background-color: var(--pelea);
+}
+
+.flying {
+    background-color: var(--vuelo);
+}
+
+.poison {
+    background-color: var(--veneno);
+}
+
+.ground {
+    background-color: var(--tierra);
+}
+
+.rock {
+    background-color: var(--tierra);
+}
+
+.bug {
+    background-color: var(--bicho);
+}
+
+.ghost {
+    background-color: var(--fantasma);
+}
+
+.steel {
+    background-color: var(--acero);
+}
+
+.fire {
+    background-color: var(--fuego);
+}
+
+.water {
+    background-color: var(--agua);
+}
+
+.grass {
+    background-color: var(--hierva);
+}
+
+.electric {
+    background-color: var(--electrico);
+}
+
+.psychic {
+    background-color: var(--psiquico);
+}
+
+.ice {
+    background-color: var(--hielo);
+}
+
+.dragon {
+    background-color: var(--dragon);
+}
+
+.dark {
+    background-color: var(--oscuro);
+}
+
+.fairy {
+    background-color: var(--magico);
+}
+
+
+/*-------------------------------------------------*/

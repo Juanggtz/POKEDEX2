@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <section class="container-icon">
+        <div class="container-pokebola">
+            <img src="./img/pokebola.png" alt="" class="img-pokebola">
+        </div>
+        <div class="container-pokebola">
+            <a href="https://www.pokemon.com/el/">
+                <img src="./img/pokelogo.png" alt="" class="logo-pokebola">
+            </a>
+        </div>
+    </section>
+
+    <section class="container-lookup">
+        <div class="item-input">
+            <input type="text" class="input" name="nombre_pokemon" id="nombre_pokemon" placeholder="Ingresé el nombre o un numero">
+        </div>
+        <div class="item-boton">
+            <button onclick="fetchPokemon()" class="button" id="boton"><span class="iconify" data-icon="ic:outline-search"></span></button>
+        </div>
+    </section>
+    <section class="container-pokemon">
+        <div class="item-panel-1" id="clase1">
+            <div class="item-pokeImg">
+                <img src="" class="pokeImg" id="pokeImg">
+            </div>
+            <div class="item-pokeName">
+                <h1 id="pokeName" class="nombre"></h1>
+                <h1 id="pokeType" class="nombre"></h1>
+            </div>
+        </div>
+        <div class="item-panel-2" id="clase2">
+            <div class="item-pokeStats">
+                <div class="stats">
+                    <div>
+                        <h1 id="peso" class="title"></h1>
+                        <h2 id="pokeWeight"></h2>
+                        <h1 id="altura" class="title"></h1>
+                        <h2 id="pokeHeight"></h2>
+                    </div>
+                    <div>
+                        <h1 id="estadistica"></h1>
+                        <ul id="pokeList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-evolution">
+        <div class="item-evolution-1">
+            <img src="" alt="" id="">
+        </div>
+        <div class="item-evolution-2">
+
+        </div>
+        <div class="item-evolution-1">
+
+        </div>
+    </section>
+
+    <footer>
+        <script src="./app.js"></script>
+
+        <script>
+            var input = document.getElementById("nombre_pokemon");
+            input.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("boton").click();
+                }
+            });
+        </script>
+    </footer>
+
+</body>
+
+</html>
